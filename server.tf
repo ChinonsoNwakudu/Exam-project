@@ -1,7 +1,7 @@
 # creating instance 1
 
 resource "aws_instance" "exam-server" {
-  ami             = "ami-0557a15b87f6559cf"
+  ami             = "ami-0aaa5410833273cfew34"
   instance_type   = "t2.micro"
   key_name        = "root-server2-london"
   security_groups = [aws_security_group.exam-security-grp-rule.id]
