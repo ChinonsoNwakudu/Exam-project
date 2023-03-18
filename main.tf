@@ -102,15 +102,15 @@ resource "aws_security_group" "exam-security-grp-rule" {
     to_port     = 80
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
-    security_groups = [aws_security_group.exam-load_balancer_sg.id]
   }
+
  ingress {
     description = "HTTPS"
     from_port   = 443
     to_port     = 443
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
-    security_groups = [aws_security_group.exam-load_balancer_sg.id]
+
   }
   ingress {
     description = "SSH"
