@@ -87,7 +87,7 @@ resource "aws_iam_role" "workernodes" {
   cluster_name  = aws_eks_cluster.exam-eks.name
   node_group_name = "exam-workernodes"
   node_role_arn  = aws_iam_role.workernodes.arn
-  subnet_ids   = [subnet-0fcf02ff56cf0648b]
+  subnet_ids   = ["subnet-0fcf02ff56cf0648b", "subnet-0e7e710927c661e86"]
   instance_types = ["t2.micro"]
  
   scaling_config {
