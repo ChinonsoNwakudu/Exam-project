@@ -1,14 +1,5 @@
-vpc_cidr_block = "10.0.0.0/16"
-
-subnet_cidr_block = "10.0.1.0/24"
-
-subnet_cidr_block2 = "10.20.1.0/24"
-
-subnet_cidr_block3 = "10.20.2.0/24"
-
-avail_zone    = "eu-west-2a"
-avail_zone2   = "eu-west-2b"
-env_prefix    = "dev"
-instance_type = "t2.micro"
-subnet_id = "subnet-0fcf02ff56cf0648b"
-swcurity_group = "sg-059de724a9e8621a5s"
+variable "vpc_cidr_block" {}
+variable "subnet_cidr_block" {}
+variable "avail_zone" {}
+variable "env_prefix" {}
+variable "instance_type" {}
