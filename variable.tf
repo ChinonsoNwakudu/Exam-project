@@ -6,8 +6,8 @@ subnet_cidr_block2 = "10.20.1.0/24"
 
 subnet_cidr_block3 = "10.20.2.0/24"
 
-avail_zone    = "eu-east-2a"
-avail_zone2   = "eu-east-2b"
+avail_zone    = "eu-west-2a"
+avail_zone2   = "eu-west-2b"
 env_prefix    = "dev"
 instance_type = "t2.micro"
 subnet_id = "subnet-0fcf02ff56cf0648b"
