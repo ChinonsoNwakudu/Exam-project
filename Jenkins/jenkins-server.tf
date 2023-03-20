@@ -19,7 +19,7 @@ resource "aws_instance" "jenkins-server" {
   vpc_security_group_ids      = [aws_security_group.exam-security-grp-rule.id]
   availability_zone           = var.avail_zone
   associate_public_ip_address = true
-  user_data                   = file("jenkins-server-script.sh")
+  user_data                   = file("jen-server.sh")
   tags = {
     Name = "${var.env_prefix}-server"
   }
